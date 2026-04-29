@@ -1,0 +1,27 @@
+[dataset]
+dataset_spec = "../../data/specs/metadc.json"
+input_path = "../../data/metadc_test_10racks_5ctx.csv"
+rules_path = "../../rules/golden_metadc/rules.json"
+
+[model]
+mode = "config"
+architecture = "gpt2"
+
+[serialization]
+numeric_precision = 6
+max_categorical_domain = 50000
+
+[training]
+epochs = 1
+batch_size = 16
+seed = 42
+
+[decoding]
+temperature = 1.0
+do_sample = true
+top_p = 0.95
+
+[run]
+n_samples = 1000
+batch_size = 1
+samples_per_prompt = 1

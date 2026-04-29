@@ -1,0 +1,26 @@
+[dataset]
+dataset_spec = "../../data/specs/cidds.json"
+input_path = "../../data/cidds_wk2_normal_10k.csv"
+rules_path = "../../rules/golden_cidds/rules.json"
+
+[model]
+mode = "config"
+architecture = "gpt2"
+
+[serialization]
+numeric_precision = 6
+
+[training]
+epochs = 1
+batch_size = 16
+seed = 42
+
+[decoding]
+temperature = 1.0
+do_sample = true
+top_p = 0.95
+
+[run]
+n_samples = 100
+batch_size = 1
+samples_per_prompt = 1
