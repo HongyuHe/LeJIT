@@ -17,7 +17,7 @@ The Python package and CLI entry point: `lejit`
 
 ## Citation
 
-```tex
+```bibtex
 @inproceedings{he2025lejit,
   title={Just-in-Time Logic Enforcement: A new paradigm of combining statistical and symbolic reasoning for network management},
   author={H{\`e}, Hongyu and Apostolaki, Maria},
